@@ -11,13 +11,23 @@ export default function Rating() {
       </div>
       <div className="flex flex-col gap-2">
         <h1 className="text-xl text-slate-100 font-medium">How Did we do?</h1>
-        <p className="text-sm text-slate-500">Please let us know how we did your support request. All feedback is appreciated to help us imporve offering!</p>
+        <p className="text-sm text-slate-500">
+          Please let us know how we did your support request. All feedback is
+          appreciated to help us imporve offering!
+        </p>
       </div>
       <form className="flex flex-col gap-4">
-        <RadioGroup.Root className="flex gap-3">
-            <label htmlFor="option-1">
-                
-            </label>
+        <RadioGroup.Root
+          className="flex gap-3"
+          defaultValue="option-5"
+          aria-label="Rating Control"
+        >
+          <RadioGroup.Item
+            value="F"
+            className="p-4 h-5 rounded-full bg-slate-700"
+          >
+            1
+          </RadioGroup.Item>
         </RadioGroup.Root>
       </form>
     </div>
