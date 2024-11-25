@@ -14,7 +14,11 @@ export default function Rating() {
         <p className="text-sm text-slate-500">Please let us know how we did your support request. All feedback is appreciated to help us imporve offering!</p>
       </div>
       <form className="flex flex-col gap-4">
-        
+        <RadioGroup.Root className="flex gap-3">
+            <label htmlFor="option-1">
+                
+            </label>
+        </RadioGroup.Root>
       </form>
     </div>
   );
