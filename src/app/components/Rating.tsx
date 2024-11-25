@@ -2,8 +2,10 @@
 
 import { Star } from "lucide-react";
 import * as RadioGroup from "@radix-ui/react-radio-group";
+import { useState } from "react";
 
 export default function Rating() {
+  const [value , setValue] = useState<string>("A")
   return (
     <div className="flex flex-col gap-4 w-3/4 md:w-1/4  p-4 rounded-md bg-slate-800 shadow-sm absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
       <div className="w-fit p-4 rounded-full bg-slate-700">
