@@ -19,12 +19,12 @@ export default function Rating() {
       <form className="flex flex-col gap-4">
         <RadioGroup.Root
           className="flex gap-3"
-          defaultValue="option-5"
+          defaultValue="A"
           aria-label="Rating Control"
         >
           <RadioGroup.Item
             value="F"
-            className="p-4 h-5 rounded-full bg-slate-700"
+            className="flex items-center justify-center font-bold text-slate-800 p-6 h-5 rounded-full bg-slate-700 hover:bg-white data-[state=checked]:bg-[#FF3800]"
           >
             1
           </RadioGroup.Item>
