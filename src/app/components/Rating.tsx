@@ -5,7 +5,12 @@ import * as RadioGroup from "@radix-ui/react-radio-group";
 import { useState } from "react";
 
 export default function Rating() {
-  const [value , setValue] = useState<string>("A")
+  const [value , setValue] = useState<string>("A");
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    console.log({value})
+  };
   return (
     <div className="flex flex-col gap-4 w-3/4 md:w-1/4  p-4 rounded-md bg-slate-800 shadow-sm absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
       <div className="w-fit p-4 rounded-full bg-slate-700">
@@ -18,7 +23,7 @@ export default function Rating() {
           appreciated to help us imporve offering!
         </p>
       </div>
-      <form className="flex flex-col gap-4">
+      <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
         <RadioGroup.Root
           className="flex justify-between"
           defaultValue={value}
