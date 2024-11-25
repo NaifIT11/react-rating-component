@@ -21,7 +21,9 @@ export default function Rating() {
       <form className="flex flex-col gap-4">
         <RadioGroup.Root
           className="flex justify-between"
-          defaultValue="A"
+          defaultValue={value}
+          value={value}
+          onValueChange={(value: string) => setValue(value)}
           aria-label="Rating Control"
         >
           <RadioGroup.Item
