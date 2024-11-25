@@ -53,6 +53,7 @@ export default function Rating() {
             5
           </RadioGroup.Item>
         </RadioGroup.Root>
+        <button type="submit" className="py-3 rounded-full font-bold uppercase bg-[#FF3800] hover:bg-slate-100">submit</button>
       </form>
     </div>
   );
