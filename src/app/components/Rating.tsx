@@ -1,6 +1,7 @@
 "use client";
 
 import { Star } from "lucide-react";
+import * as RadioGroup from "@radix-ui/react-radio-group";
 
 export default function Rating() {
   return (
@@ -10,8 +11,11 @@ export default function Rating() {
       </div>
       <div className="flex flex-col gap-2">
         <h1 className="text-xl text-slate-100 font-medium">How Did we do?</h1>
-        <p className="text-sm text-slate-00">Please let us know how we did your support request. All feedback is appreciated to help us imporve offering!</p>
+        <p className="text-sm text-slate-500">Please let us know how we did your support request. All feedback is appreciated to help us imporve offering!</p>
       </div>
+      <form className="flex flex-col gap-4">
+        
+      </form>
     </div>
   );
 }
