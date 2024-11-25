@@ -8,6 +8,10 @@ export default function Rating() {
       <div className="w-fit p-4 rounded bg-slate-600">
         <Star className="w-4 h-4 text-[#FF3800]" />
       </div>
+      <div className="flex flex-col gap-3">
+        <h1 className="text-xl text-slate-100 font-medium">How Did we do?</h1>
+        <p className="text-sm text-slate-00">Please let us know how we did your support request. All feedback is appreciated to help us imporve offering!</p>
+      </div>
     </div>
   );
 }
