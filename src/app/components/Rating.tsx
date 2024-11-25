@@ -18,7 +18,7 @@ export default function Rating() {
       </div>
       <form className="flex flex-col gap-4">
         <RadioGroup.Root
-          className="flex gap-3"
+          className="flex justify-between"
           defaultValue="A"
           aria-label="Rating Control"
         >
@@ -27,6 +27,30 @@ export default function Rating() {
             className="flex items-center justify-center font-bold text-slate-800 p-6 h-5 rounded-full bg-slate-700 hover:bg-white data-[state=checked]:bg-[#FF3800]"
           >
             1
+          </RadioGroup.Item>
+          <RadioGroup.Item
+            value="D"
+            className="flex items-center justify-center font-bold text-slate-800 p-6 h-5 rounded-full bg-slate-700 hover:bg-white data-[state=checked]:bg-[#FF3800]"
+          >
+            2
+          </RadioGroup.Item>
+          <RadioGroup.Item
+            value="C"
+            className="flex items-center justify-center font-bold text-slate-800 p-6 h-5 rounded-full bg-slate-700 hover:bg-white data-[state=checked]:bg-[#FF3800]"
+          >
+            3
+          </RadioGroup.Item>
+          <RadioGroup.Item
+            value="B"
+            className="flex items-center justify-center font-bold text-slate-800 p-6 h-5 rounded-full bg-slate-700 hover:bg-white data-[state=checked]:bg-[#FF3800]"
+          >
+            4
+          </RadioGroup.Item>
+          <RadioGroup.Item
+            value="A"
+            className="flex items-center justify-center font-bold text-slate-800 p-6 h-5 rounded-full bg-slate-700 hover:bg-white data-[state=checked]:bg-[#FF3800]"
+          >
+            5
           </RadioGroup.Item>
         </RadioGroup.Root>
       </form>
